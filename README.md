@@ -3,7 +3,7 @@ hydra
 <br/>
 ssh hpc.nyu.edu
 ssh hydra
-qsub -q interactive -I -l nodes=1:ppn=1:gpus=1,walltime=4:00:00,mem=10gb
+qsub -q interactive -I -l nodes=hydra.es.its.nyu.edu:ppn=1:gpus=1,walltime=4:00:00,mem=10gb
 
 Installation : sh build.sh <br/>
 

@@ -13,10 +13,13 @@
 # 
 # (it'll almost certainly be under /usr)
 
+export PATH=.local/bin:$PATH
+export  PYTHONPATH=$PYTHONPATH:./local/lib
+
 module load python/2.7.5
 module load atlas/3.10.1
 
-easy_install --prefix=$HOME/local numpy
+#easy_install --prefix=$HOME/local numpy
 
 # CUDA toolkit installation directory.
 export CUDA_INSTALL_PATH=/usr/local/cuda-5.5/
