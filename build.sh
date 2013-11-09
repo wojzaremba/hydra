@@ -31,7 +31,7 @@ export CUDA_SDK_PATH=/usr/local/cuda-5.5/
 export PYTHON_INCLUDE_PATH=/share/apps/python/2.7.5/include/python2.7/
 
 # Numpy include directory. This should contain the file arrayobject.h, among others.
-export NUMPY_INCLUDE_PATH=~/local/lib/python2.6/site-packages/numpy-1.6.2-py2.6-linux-x86_64.egg/numpy/core/include/numpy/
+export NUMPY_INCLUDE_PATH=./local/lib/python2.6/site-packages/numpy-1.6.2-py2.6-linux-x86_64.egg/numpy/core/include/numpy/
 
 # ATLAS library directory. This should contain the file libcblas.so, among others.
 export ATLAS_LIB_PATH=/share/apps/atlas/3.10.1/lib/
