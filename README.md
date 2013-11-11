@@ -1,14 +1,15 @@
 hydra
 =====
 <br/>
-	ssh hpc.nyu.edu <br/>
+```
+ssh hpc.nyu.edu <br/>
 ssh hydra <br/>
 qsub -q interactive -I -l nodes=hydra1.es.its.nyu.edu:ppn=1:gpus=1,walltime=4:00:00,mem=10gb <br/>
-
+```
 git clone https://login@github.com/wojzaremba/hydra.git
 
-rename old ~/.local directory and add symboic link to repository_loc/.local:
-cd ~/
+rename old ~/.local directory and add symboic link to repository_loc/.local:<br/>
+cd ~/ 
 ln -s repository_loc/.local
 
 add to your ~/.bash_profile<br/>
