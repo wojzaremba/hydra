@@ -4,8 +4,8 @@ hydra
 
 Login to hydra and start an interactive session.
 ```
-ssh hpc.nyu.edu <br/>
-ssh hydra <br/>
+ssh hpc.nyu.edu
+ssh hydra <
 qsub -q interactive -I -l nodes=hydra1.es.its.nyu.edu:ppn=1:gpus=1,walltime=4:00:00,mem=10gb 
 ```
 <br/>
@@ -28,8 +28,8 @@ Add the following to your ~/.bash_profile<br/>
 export  PYTHONPATH=$PYTHONPATH:repository_loc/local/lib
 export PATH=repository_loc/local/bin:$PATH
 
-module load python/2.7.5 <br/>
-module load atlas/3.10.1 <br/>
+module load python/2.7.5 
+module load atlas/3.10.1 
 ```
 <br/>
 
