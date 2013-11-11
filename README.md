@@ -6,19 +6,22 @@ Login to hydra and start an interactive session.
 ```
 ssh hpc.nyu.edu <br/>
 ssh hydra <br/>
-qsub -q interactive -I -l nodes=hydra1.es.its.nyu.edu:ppn=1:gpus=1,walltime=4:00:00,mem=10gb <br/>
+qsub -q interactive -I -l nodes=hydra1.es.its.nyu.edu:ppn=1:gpus=1,walltime=4:00:00,mem=10gb 
 ```
+<br/>
 
 Clone repository (if you have not done so already). Make sure to replace login with your own git login.
 ```
 git clone https://login@github.com/wojzaremba/hydra.git
 ```
+<br/>
 
-Rename old ~/.local directory and add symboic link to repository_loc/.local:<br/>
+Rename old ~/.local directory and add symboic link to repository_loc/.local (where repository_loc is the location of the hydra repository):<br/>
 ```
 cd ~/ 
 ln -s repository_loc/.local
 ```
+<br/>
 
 Add the following to your ~/.bash_profile<br/>
 ```
@@ -29,7 +32,9 @@ module load python/2.7.5 <br/>
 module load atlas/3.10.1 <br/>
 ```
 <br/>
+
 Installation : ```sh build.sh``` <br/>
+<br/>
 
 Execution : 
 ```
