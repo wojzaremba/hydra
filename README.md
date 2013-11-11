@@ -8,8 +8,8 @@ qsub -q interactive -I -l nodes=hydra1.es.its.nyu.edu:ppn=1:gpus=1,walltime=4:00
 git clone https://login@github.com/wojzaremba/hydra.git
 
 add to your ~/.bash_profile<br/>
-export  PYTHONPATH=$PYTHONPATH:<repository loc>/local/lib<br/>
-export PATH=<repository loc>/local/bin:$PATH<br/>
+export  PYTHONPATH=$PYTHONPATH:repository_loc/local/lib<br/>
+export PATH=repository_loc/local/bin:$PATH<br/>
 <br/>
 module load python/2.7.5 <br/>
 module load atlas/3.10.1 <br/>
